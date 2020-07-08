@@ -4,6 +4,17 @@
   <artifactId>functional-test</artifactId>
   <version>0.0.1-SNAPSHOT</version>
 	
+	 <plugin>
+    <groupId>org.apache.maven.plugins</groupId>
+    <artifactId>maven-compiler-plugin</artifactId>
+    <version>2.5.1</version>
+    <configuration>
+      <fork>true</fork>
+      <meminitial>1024m</meminitial>
+      <maxmem>2024m</maxmem>
+    </configuration>
+  </plugin>
+	
   <dependencies>
 		<!-- https://mvnrepository.com/artifact/junit/junit -->
 		<dependency>
